@@ -1,0 +1,61 @@
+body{
+    background-color: #1C1C28;
+    color: white;
+    
+}
+.image-carousel{
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.material-symbols-outlined{
+}
+header{
+    background-color: black;
+    height: 40px;
+}
+header > span{
+    position: fixed;
+}
+.categoria{
+    background-color: #252537   ;
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 10px;
+    border: blue;
+    margin-top: 10px;
+}
+.assistir_filmes{
+    font-size: 40px;    
+}
+
+ .titulo{
+    text-align: center;
+}
+.titulo >img{
+    width: 300px;
+    height: 30px;
+}
+
+.filmes{
+    display:inline-flex;
+}
+.image{
+    margin-left: 3px;
+}
+h4 {
+    margin-left: 10px;
+    font-family: 'Roboto-Condensed';
+    text-decoration: none solid rgb(255, 255, 255);
+    font-size: 16px;
+}
+i{
+    color: #F39256;
+   margin-left: 3px;
+   margin-right: 3px;
+}
+header > span{
+    margin: 5px;
+}
