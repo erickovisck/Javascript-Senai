@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100vh;
+}
+
+.background {
+    background: url('image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+header img {
+    width: 120px;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 80px;
+    width: 300px;
+    border-radius: 4px;
+    margin-top: 140px;
+}
+
+.login-container h1 {
+    margin-bottom: 24px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #f40612;
+}
+
+.login-container .help-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-container .help-container a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.login-container .help-container a:hover {
+    text-decoration: underline;
+}
+
+.login-container .signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login-container .signup a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-container .signup a:hover {
+    text-decoration: underline;
+}
