@@ -1,0 +1,70 @@
+.pagamento{
+    flex-direction: column;
+    text-align: right;
+    margin-right: 50px;
+    padding-left: 200px;
+}
+.center{
+        display: flex;
+        justify-content: center;
+        border: 1px ;
+        width: 1000px;
+        height: 300px;
+        margin-top:200px;
+        box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);       
+
+}
+#descricao{
+    opacity: 40%;
+    padding-right: 500px;
+}
+
+#descricao2{
+    opacity: 40%;
+}
+.preco{
+    flex-direction: column;
+    text-align: left;
+    padding-right: 10%;
+    width: 300px;
+    margin-left: 20px;
+}
+.logo > img{
+    width: 30px;
+   height: 20px;
+   margin-right: 10px;
+}
+.logo{
+    text-align: left;
+    right: 400px
+}
+#card1{
+    border: 1px solid opacity(10%);
+    margin-bottom: 10px;
+    width: 350px;
+}
+#card2{
+    margin-bottom: 10px;
+}
+
+.logo{
+
+}
+.total{
+    display: flex;
+}
+#price{
+    color:blue;
+}
+input{
+    height: 25px;
+}
+#efetuar{
+     width: 100%;
+    text-align: center;
+    background-color: #1C85C9;
+    color: white;
+    border: 0;
+    height: 30px;
+    border-radius: 3px;
+}

@@ -4,8 +4,8 @@ body{
     
 }
 .image-carousel{
-    height: 300px;
-    width: 200px;
+    height: 247px;
+    width: 165px;
     border-radius: 15px;
     margin-left: 10px;
 }
@@ -26,6 +26,12 @@ header > span{
     border-radius: 10px;
     border: blue;
     margin-top: 10px;
+}
+.categorias{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
 }
 .assistir_filmes{
     font-size: 40px;    
@@ -58,4 +64,17 @@ i{
 }
 header > span{
     margin: 5px;
+}
+.meio{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2{
+    font-size: 32px;
+}
+a{
+    color: white;
+}
+a{
+    text-decoration: none;
 }
