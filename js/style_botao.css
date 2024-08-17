@@ -1,0 +1,54 @@
+body{
+    background-color: aqua;
+}
+/* .vermelho:hover{
+    background-color: red;
+    transform: scale(1.20);
+}   
+.azul:hover{
+    background-color: blue;
+    transform: scale(1.20);
+}   
+.rosa:hover{
+    background-color: pink;
+    transform: scale(1.20);
+}
+.roxo:hover{
+    background-color: purple;
+    transform: scale(1.20);
+}
+.amarelo:hover{
+    background-color: black;
+    transform: scale(1.20);
+}
+.branco:hover{
+    background-color: brown;
+    transform: scale(1.20);
+} */
+.botoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+ button{
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 90px;
+    height: 50px;
+    width: 200px;
+    transition-duration: 0.4s;
+
+    }
+button:hover{
+    background-color: #04AA6D; /* Green */
+    color: white;
+}
+.titulo{
+    text-align: center;
+  
+}

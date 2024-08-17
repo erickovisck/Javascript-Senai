@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style_botao.css">
+
+    <title>Desafios js</title>
+</head>
+<body>
+    <h1 class="titulo">Desafios JS!</h1>
+    <div class="botoes">
+        <button class="vermelho" onclick="antecessor()">Antecessor e sucessos</button>
+        <button class="azul" onclick="dobro()">Dobro triplo e raiz</button>
+        <button class="rosa" onclick="nota()">Saber sua nota</button>
+
+        <h1> Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.</h1>
+        <input type="number" id="metros">
+        <button class="roxo" onclick="metros_cm()">Metros para cm e milímetros</button>
+        <div id="metros_resposta"></div>
+        <h1> Faça um programa que leia um número inteiro qualquer e mostre na tela e sua tabuada.</h1>
+        <input id="tabuada">
+        <button class="amarelo" onclick="tabuada_funcao()">Tabuada</button>
+        <div id="tabuada_resposta"></div>
+        <h1> Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostra quantos Dólares ela pode comprar.
+            Considere o dólar = R$ 5,00</h1>
+        <input id="real">
+        <button class="branco" onclick="real_dolar()">Real para dolar</button>
+        <div id="real_resposta"></div>
+    </div>
+    <script src="desafios.js"></script>
+</body>
+</html>
