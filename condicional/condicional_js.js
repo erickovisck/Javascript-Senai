@@ -1,8 +1,8 @@
 function verificar_idade(){
     let idade = parseInt(document.getElementById('idade').value)
     if (idade <18){
-        alert("menor de idade")
+        document.getElementById("resultado").innerHTML = "<p>menor de idade</p>"
     }else{
-        alert("maior de idade")
+        document.getElementById("resultado").innerHTML = "<p>maior de idade</p>"
     }
 }
