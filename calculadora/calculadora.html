@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link rel="stylesheet" href="calculadora_css.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <div class="container valign" id="cont_calc">
+            <div class="row">
+                <h1 class="center">Calculadora</h1>
+                <form id="calc_form"> <div class="input-field col s12">
+                        <div class="field col s12">
+                            <label>Operação</label>
+                            <select class="browser-default" id="operacao">
+                                <option value="soma">+</option>
+                                <option value="subtracao">-</option>
+                                <option value="multiplicacao">*</option>
+                                <option value="divisao">/</option>
+                            </select>
+                        </div>
+                        <div class="center input-field col s6">
+                            <label for="num1">Numero 1</label>
+                            <input id="num1" type="number">
+                        </div>
+                        <div class="center input-field col s6">
+                            <label for="num1">Numero 2</label>
+                            <input id="num2" type="number">
+                        </div>
+                        <button class="waves-effect waves-light btn"
+                            type="submit" name="action">Resultado</button>
+                        <div class="center" id="resultado">
+                        </div>
+                </form>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+          });
+          
+        document.getElementById('calc_form').addEventListener('submit', function(event){
+        event.preventDefault()
+        var operacao = document.getElementById('operacao').value
+        var num1 = parseFloat(document.getElementById('num1').value)
+        var num2 = parseFloat(document.getElementById('num2').value)
+     if (num1 && num2 && operacao){
+            if (operacao == 'soma'){
+                var result = num1 + num2 
+            }else if(operacao == 'subtracao'){
+                var result = num1 - num2 
+            }else if(operacao == 'multiplicacao'){
+                var result = num1 * num2 
+            }else if(operacao == 'divisao'){
+                var result = num1 / num2      
+            }
+        } 
+            
+        document.getElementById("resultado").innerHTML = `<p>Resultado = ${result} </p>`  
+        
+    })</script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+#cont_calc{
+    max-width: 600px;
+    max-height  : 500px;
+    background-color: #F9F9F9;
+}
+#num1, #num2{
+    max-width: 300px;
+}

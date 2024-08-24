@@ -1,19 +1,30 @@
 
 // 1
-function antecessor(n1){
-    var n1 = parseInt((prompt('digite um número')));
-    if (n1){
-        alert('antecessor de ' + (n1) + ' é ' + (n1-1) + ' e seu sucessor é ' + (n1+1) )
+document.getElementById('desafio1').addEventListener('submit', function (event) {
+
+    const numero = parseInt(document.getElementById('numero').value);
+    if (isNaN(numero)) {
+        document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, digite um número válido.</p>';
+    } else {
+        const antecessor = numero - 1;
+        const sucessor = numero + 1;
+        document.getElementById('resultado').innerHTML = `<p>O antecessor de ${numero} é ${antecessor} e o sucessor é ${sucessor}.</p>`;
     }
-}
+});
 
 // 2
-function dobro(n1){
-    var n1 = parseFloat(prompt('digite um número'));
-    if (n1){
-    alert('dobro ' + n1*2 + ' triplo = ' + n1*3 + ' raiz quadrada ' + Math.sqrt(n1) )
+document.getElementById('desafio2').addEventListener('submit', function (event) {
+
+    let numero = parseInt(document.getElementById('numero2').value);
+    if (isNaN(numero)) {
+        document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, digite um número válido.</p>';
+    } else {
+        let dobro = numero * 2 ;
+        let triplo = numero * 3;
+        let raiz = Math.sqrt(numero)
+        document.getElementById('resultado2').innerHTML = `<p>O dobro de ${numero} é ${dobro} e o triplo  é ${triplo} e a raiz é ${raiz}.</p>`;
     }
-}
+});
 
 // 3
 function nota(){
@@ -24,30 +35,46 @@ function nota(){
         alert('primeira nota = ' + nota1 + ' segunda = ' + nota2 + ', média =  '+ media)
     }
 }
+document.getElementById('desafio3').addEventListener('submit', function (event) {
+
+    let nota1 = parseFloat(document.getElementById('nota1').value);
+    let nota2 = parseFloat(document.getElementById('nota2').value);
+    
+        let media = (nota1 + nota2)/2 ;
+        document.getElementById('resultado3').innerHTML = `<p>Primeira nota = ${nota1} segunda = ${nota2} sua média é ${media}.</p>`;
+    
+});
+
 
 // 4
-function metros_cm(){
-    var metros =  document.getElementById('metros').value
-    document.getElementById('metros_resposta').textContent ='metros = ' + metros + ' centimetros =' +  metros*100 + ' milímetros = ' +metros*1000
-  
-}
+
+
+document.getElementById("desafio4").addEventListener('submit', function(event){
+    let metros = parseInt(document.getElementById('metros').value)
+    document.getElementById('resultado4').innerHTML = `<p> metros = ${metros} centimetros = ${metros*100} milímetros = ${metros*1000}</p>`
+})
+
 
 // 5 
-function tabuada_funcao(){
-    var tabuada =  document.getElementById('tabuada').value
-    if (tabuada){
-        console.log('tabuada do número ' + tabuada )
+
+document.getElementById("desafio5").addEventListener('submit', function(event){
+    document.getElementById('resultado5').innerHTML= ''
+    var tabuada =  parseFloat(document.getElementById('tabuada').value)
         for (var i = 1; i<=10; i++){
-            var resposta = resposta +  i + ' * ' + tabuada + ' = ' + i*tabuada + "<br>"
+            document.getElementById('resultado5').innerHTML += `<p>${tabuada} * ${i} = ${tabuada*i}</p><br>`  
         }
-        document.getElementById('tabuada_resposta').textContent = resposta
-    }
-}
+})
+
 
 // 6
-function real_dolar(real){
-    var real =  document.getElementById('real').value
+document.getElementById("desafio6").addEventListener('submit', function(event){
+    document.getElementById('resultado6').innerHTML = ''
+    var real =  parseFloat(document.getElementById('real').value)
     if (real){
-        document.getElementById('real_resposta').textContent = 'com esse dinheiro vc tem ' + real/5,47 + 'Dolares'
+        document.getElementById('resultado6').innerHTML += `<p>com esse dinheiro vc tem ${real/5} Dólares</p>`  
     }
-}
+})
+
+
+
+ 

@@ -5,31 +5,203 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style_botao.css">
 
+    <h1 class="titulo">Desafios JS!</h1>
     <title>Desafios js</title>
 </head>
 <body>
-    <h1 class="titulo">Desafios JS!</h1>
-    <div class="botoes">
-        <button class="vermelho" onclick="antecessor()">Antecessor e sucessos</button>
-        <button class="azul" onclick="dobro()">Dobro triplo e raiz</button>
-        <button class="rosa" onclick="nota()">Saber sua nota</button>
+    <button data-target="modal1" class="btn modal-trigger">Exercicio 1</button>
 
-        <h1> Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.</h1>
-        <input type="number" id="metros">
-        <button class="roxo" onclick="metros_cm()">Metros para cm e milímetros</button>
-        <div id="metros_resposta"></div>
-        <h1> Faça um programa que leia um número inteiro qualquer e mostre na tela e sua tabuada.</h1>
-        <input id="tabuada">
-        <button class="amarelo" onclick="tabuada_funcao()">Tabuada</button>
-        <div id="tabuada_resposta"></div>
-        <h1> Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostra quantos Dólares ela pode comprar.
-            Considere o dólar = R$ 5,00</h1>
-        <input id="real">
-        <button class="branco" onclick="real_dolar()">Real para dolar</button>
-        <div id="real_resposta"></div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Desafio 1</h4>
+        <p>programa que le um número inteiro e mostra na tela e seu sucessor e seu antecessor.</p>
+        <div class="row">
+            <form id="desafio1" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Digite um número" id="numero" type="text" class="validate">
+                        <label for="numero">Digite um número</label>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                        
+                        
+                    </div>  
+                </div>
+            </form>
+            <div id="resultado" class="row" style="margin-top: 20px;">
+              
+            </div>
+        </div>
     </div>
+
+    <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Fechar</a>
+    </div>
+</div>
+    <button data-target="modal2" class="btn modal-trigger">Exercicio 2</button>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+        <h4>Desafio 2</h4>
+        <p>Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.</p>
+        <div class="row">
+            <form id="desafio2" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Digite um número" id="numero2" type="text" class="validate">
+                        <label for="numero2">Digite um número</label>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                        
+                    </div>  
+                </div>
+            </form>
+            <div id="resultado2" class="row" style="margin-top: 20px;">
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Fechar</a>
+    </div>
+</div>
+<button data-target="modal3" class="btn modal-trigger">Exercicio 3</button>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+      <h4>Desafio 3</h4>
+      <p>Desenvolva um programa que leia as duas notas de um aluno, calcule e mostra a sua média.</p>
+      <div class="row">
+          <form id="desafio3" class="col s12">
+              <div class="row">
+                  <div class="input-field col s6">
+                      <input placeholder="Digite primeira nota" id="nota1" type="text" class="validate">
+                      <input placeholder="Digite segunda nota" id="nota2" type="text" class="validate">
+                      <label for="nota1">Digite primeira nota</label>
+                      <label for="nota2">Digite segundanota</label>
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                      
+                  </div>  
+              </div>
+          </form>
+          <div id="resultado3" class="row" style="margin-top: 20px;">
+            
+          </div>
+      </div>
+  </div>
+
+  <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Fechar</a>
+  </div>
+</div>
+<button data-target="modal4" class="btn modal-trigger">Exercicio 4</button>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <h4>Desafio 4</h4>
+        <p>Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.</p>
+        <div class="row">
+            <form id="desafio4" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Digite metros" id="metros" type="text" class="validate">
+                        <label for="metros">Digite metros</label>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                        
+                    </div>  
+                </div>
+            </form>
+            <div id="resultado4" class="row" style="margin-top: 20px;">
+              
+            </div>
+        </div>
+    </div>
+  
+    <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <button data-target="modal5" class="btn modal-trigger">Exercicio 5</button>
+
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+        <h4>Desafio 5</h4>
+        <p>Faça um programa que leia um número inteiro qualquer e mostre na tela e sua tabuada.</p>
+        <div class="row">
+            <form id="desafio5" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Digite numero" id="tabuada" type="text" class="validate">
+                        <label for="tabuada">Digite numero</label>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                        
+                    </div>  
+                </div>
+            </form>
+            <div id="resultado5" class="row" style="margin-top: 20px;">
+              
+            </div>
+        </div>
+    </div>
+  
+    <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Fechar</a>
+    </div>
+  </div>
+  
+  <button data-target="modal6" class="btn modal-trigger">Exercicio 6</button>
+
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+        <h4>Desafio 6</h4>
+        <p>Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostra quantos Dólares ela pode comprar.
+
+            Considere o dólar = R$ 5,00</p>
+        <div class="row">
+            <form id="desafio6" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Digite valor" id="real" type="text" class="validate">
+                        <label for="real">Digite valor</label>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                        
+                    </div>  
+                </div>
+            </form>
+            <div id="resultado6" class="row" style="margin-top: 20px;">
+              
+            </div>
+        </div>
+    </div>
+  
+    <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Fechar</a>
+    </div>
+  </div>
+
+
     <script src="desafios.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script >
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.modal');
+          var instances = M.Modal.init(elems);
+        });
+      </script>
 </body>
 </html>
