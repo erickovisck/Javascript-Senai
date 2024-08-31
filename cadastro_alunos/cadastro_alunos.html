@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <div class="container valign" id="cont_calc">
+            <div class="row">
+                <h1 class="center">Cadastro</h1>
+                <form id="cadastro_aluno"> <div class="input-field col s12">
+                        
+                        <div class="center input-field row s3">
+                            <label for="nome">Nome</label>
+                            <input id="nome" type="text">
+                        </div>
+                        <div class="center input-field row s3">
+                            <label for="idade">Idade</label>
+                            <input id="idade" type="number">
+                        </div>
+                        <div class="center input-field row s3">
+                            <label for="curso">Curso</label>
+                            <input id="curso" type="text">
+                        </div>
+                        <button class="waves-effect waves-light btn"
+                            type="submit" name="action">Cadastrar</button>
+                        <div class="center" id="resultado">
+                        </div>
+                </form>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+          });
+          
+        document.getElementById('cadastro_aluno').addEventListener('submit', function(event){
+        event.preventDefault()
+        var nome = document.getElementById('nome').value
+        var idade = parseInt(document.getElementById('idade').value)
+        var curso = document.getElementById('curso').value
+        if (nome && idade && curso){
+            document.getElementById("resultado").innerHTML = `<p style='color:green;'> O aluno ${nome}, possui ${idade} anos e está cursando ${curso}. </p>`  
+        }else{
+            document.getElementById('resultado').innerHTML = `<p style='color:red;'>Preencha todos os campos</p> `
+        }
+        
+    })</script>
+    </body>
+</html>
