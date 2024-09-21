@@ -6,7 +6,7 @@ while(genero != 'M' && genero != 'F'){
 alert('genero valido')
 
 // //desafio 2 
-var aleatorio = Math.floor(Math.random() * 10);
+var aleatorio = Math.floor(Math.random() * 11);
 var tentativas = 0
 while(aleatorio != numero){
     var numero = parseInt(prompt('advinhe o numero'))
