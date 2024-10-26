@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardapio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="script/cardapio.js"></script>
 </head>
 <body>
-    <p>Pizza Portuguesa --> R$50,00 <input id="pizza_portuguesa" type="number"></p>
-    <p>Pizza Mussarela --> R$45,00 <input id="pizza_mussarela" type="number"></p>
-    <p>Fanta Laranja --> R$5,00 <input id="fanta_laranja" type="number"></p>
+    <h1 class="text-center">Cardapio Erick</h1>
+    
+    <div class="item"> <h3>Pizza Portuguesa</h3>--> R$50,00 <input id="pizza_portuguesa" type="number"></div>
+    <div class="item"> <h3>Pizza Mussarela</h3> --> R$45,00 <input id="pizza_mussarela" type="number"></div>
+    <div class="item"> <h3>Fanta Laranja</h3> --> R$5,00 <input id="fanta_laranja" type="number"></div>
     <button onclick="Calcular()">Calcular</button>
     <div id="total"></div>
     

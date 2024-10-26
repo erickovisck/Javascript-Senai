@@ -8,7 +8,7 @@ function Calcular(){
         'pizza_mussarela':45,
         'fanta_laranja':5
     }
-
+    
     if(document.getElementById('pizza_portuguesa').value != ''){
         valor += 50 * Number(document.getElementById('pizza_portuguesa').value)
         produtos_escolhidos.push("Pizza Portuguesa")
@@ -25,4 +25,5 @@ function Calcular(){
     }
     document.getElementById('total').innerHTML = `O valor do pedido é ${valor}
     <br> Os produtos escolhidos foram: ', ${produtos_escolhidos}`
+    console.log(document.getElementsByTagName('h3').value)
 }
