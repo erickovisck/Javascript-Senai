@@ -2,7 +2,6 @@ function verificarCPF() {
     let cpf = document.getElementById("cpf").value;
     let resultado = document.getElementById("resultado");
 
-    // Remove caracteres não numéricos
     cpf = cpf.replace(/[^\d]+/g, '');
 
     if (validarCPF(cpf)) {
@@ -16,12 +15,11 @@ function verificarCPF() {
 
 function validarCPF(cpf) {
     if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) {
-        return false; // Verifica se todos os dígitos são iguais ou se a quantidade de números é diferente de 11
+        return false; 
     }
 
     let soma = 0, resto;
 
-    // Valida o primeiro dígito
     for (let i = 1; i <= 9; i++) {
         soma += parseInt(cpf.substring(i - 1, i)) * (11 - i);
     }
@@ -31,7 +29,6 @@ function validarCPF(cpf) {
 
     soma = 0;
 
-    // Valida o segundo dígito 
     for (let i = 1; i <= 10; i++) {
         soma += parseInt(cpf.substring(i - 1, i)) * (12 - i);
     }
