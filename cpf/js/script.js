@@ -1,15 +1,13 @@
-function verificarCPF() {
+function verificar_cpf() {
     let cpf = document.getElementById("cpf").value;
     let resultado = document.getElementById("resultado");
 
     cpf = cpf.replace(/[^\d]+/g, '');
 
     if (validarCPF(cpf)) {
-        resultado.textContent = "O CPF é válido.";
-        resultado.style.color = "green";
+        resultado.textContent = "CPF válido";
     } else {
-        resultado.textContent = "O CPF é inválido.";
-        resultado.style.color = "red";
+        resultado.textContent = "CPF inválido.";
     }
 }
 
