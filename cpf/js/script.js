@@ -2,7 +2,6 @@ function verificar_cpf() {
     let cpf = document.getElementById("cpf").value;
     let resultado = document.getElementById("resultado");
     event.preventDefault()
-
     cpf = cpf.replace(/[^\d]+/g, '');
     
     if (validar_cpf(cpf)) {
