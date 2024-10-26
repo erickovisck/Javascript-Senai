@@ -40,15 +40,18 @@ let par = []
 let impar = []
 while (true){
     let num = parseFloat(prompt('digite um numero, digite 0 para encerrar'))
-    lista.push(num)
-    if(num%2 == 0){
-        par.push(num)
-    }else{
-        impar.push(num)
-    }
-    if (num == 0){
-        break
-    }
+    
+        console.log(typeof(num))
+        lista.push(num)
+        if(num%2 == 0){
+            par.push(num)
+        }else{
+            impar.push(num)
+        }
+        if (num == 0){
+            break
+        }
+    
 }
 alert('lista completa '+ lista)
 alert('lista pares '+ par)
