@@ -1,6 +1,65 @@
-/* h1{
-    text-align: center;
-} */
-/* .imagem_item{
-    display: inline-block;
-} */
+body{
+    background-color: #700f0f;
+}
+h1 {
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black; /* Tomato color */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #343a40; /* Dark color for contrast */
+}
+
+input[type="number"] {
+    width: 60px;
+    margin-left: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 200px; /* Set a consistent max width */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #28a745; /* Green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+#total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: #f0bd18ea;
+}
+
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    background-color: #b3932d; /* Change this color as desired */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Adjust the scale value as desired */
+}
