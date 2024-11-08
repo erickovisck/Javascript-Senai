@@ -54,6 +54,8 @@ button:hover {
 
 .card img {
     transition: transform 0.3s ease-in-out;
+    width: 150px;
+    height: 200px;
 }
 
 .card:hover {
